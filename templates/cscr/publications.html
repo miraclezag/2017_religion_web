@@ -1,0 +1,189 @@
+{% extends "cscr/base.html" %}
+
+{% block content %}
+<div class="main" >
+	<div class="page">
+		<h2 style="color: white;"> 搜尋：</h2>
+		<table class="layout display responsive-table">
+			<thead>
+				<tr>
+					<th width="18%">
+						類型
+					</th>
+					<th width="70%">
+						著作
+					</th>
+					<th width="12%">
+						 著作人
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="organisationtype">
+						專書篇章
+					</td>
+					<td class="organisationname">
+						謝世維, 2014.12, '地方宗教中的道法關係：以臺南和意堂為核心的考察, ' 政大人文系列叢書, 政大出版社, pp.447-482.
+					</td>
+					<td class="organisationauthor">
+						謝世維
+					</td>
+				</tr>
+				
+
+				<tr>
+					<td class="organisationtype">
+						專書篇章
+					</td>
+					<td class="organisationname">
+						謝世維, 2014.12, '地方宗教中的道法關係：以臺南和意堂為核心的考察, ' 政大人文系列叢書, 政大出版社, pp.447-482.
+						謝世維, 2014.12, '地方宗教中的道法關係：以臺南和意堂為核心的考察, ' 政大人文系列叢書, 政大出版社, pp.447-482.
+						謝世維, 2014.12, '地方宗教中的道法關係：以臺南和意堂為核心的考察, ' 政大人文系列叢書, 政大出版社, pp.447-482.
+					</td>
+					<td class="organisationauthor">
+						謝世維
+					</td>
+				</tr>
+
+
+				<tr>
+					<td class="organisationtype">
+						專書篇章
+					</td>
+					<td class="organisationname">
+						謝世維, 2014.12, '地方宗教中的道法關係：以臺南和意堂為核心的考察, ' 政大人文系列叢書, 政大出版社, pp.447-482.
+					</td>
+					<td class="organisationauthor">
+						謝世維
+					</td>
+				</tr>
+
+				<tr>
+					<td class="organisationtype">
+						專書篇章
+					</td>
+					<td class="organisationname">
+						謝世維, 2014.12, '地方宗教中的道法關係：以臺南和意堂為核心的考察, ' 政大人文系列叢書, 政大出版社, pp.447-482.
+					</td>
+					<td class="organisationauthor">
+						謝世維
+					</td>
+				</tr>
+
+
+				<tr>
+					<td class="organisationtype">
+						專書篇章
+					</td>
+					<td class="organisationname">
+						謝世維, 2014.12, '地方宗教中的道法關係：以臺南和意堂為核心的考察, ' 政大人文系列叢書, 政大出版社, pp.447-482.
+					</td>
+					<td class="organisationauthor">
+						謝世維
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>	
+
+	<style type="text/css">
+		body{
+			padding: 1em;
+		}
+		.main{
+			width: 100%;
+			height: 100%;
+			background-color: #424242;
+		}
+		.page{
+			max-width: 60em;
+			margin: 0 auto;
+			padding-top: 5px;
+		}
+		table th, table td{
+			text-align:left;
+		}
+		table.layout{
+			width: 100%;
+			border-collapse: collapse;
+
+		}
+		table.display{
+			margin: 1em 0;
+		}
+		table.display th,table.display td{
+			border: 1px solid #B3BFAA;
+			padding: .5em 1em;
+
+		}
+		table.display th{ background: #D5E0CC; }
+		table.display td{ background: #fff; }
+
+		table.responsive-table{
+		  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+		}
+
+	@media (max-width: 30em){
+		    table.responsive-table{
+		      box-shadow: none;  
+		    }
+		    table.responsive-table thead{
+		      display: none; 
+		    }
+		  	table.display th,
+		  	table.display td{
+		    padding: .5em;
+		  }
+		    
+		  table.responsive-table td:nth-child(1):before{
+		    content: '類型';
+		  }
+		  table.responsive-table td:nth-child(2):before{
+		    content: '著作';
+		  }
+		   table.responsive-table td:nth-child(3):before{
+		    content: '著作人';
+		  }
+
+		  table.responsive-table td:nth-child(1),
+		  table.responsive-table td:nth-child(2),
+		  table.responsive-table td:nth-child(3){
+		    padding-left: 25%;
+		  }
+		  table.responsive-table td:nth-child(1):before,
+		  table.responsive-table td:nth-child(2):before{
+		    position: absolute;
+		    left: .5em;
+		    font-weight: bold;
+		  }
+		  table.responsive-table td:nth-child(3):before{
+		  	font-weight: bold;
+		  	position: absolute;
+		    left: .5em;
+		  }
+		  
+		    table.responsive-table tr,
+		    table.responsive-table td{
+		        display: block;
+		    }
+		    table.responsive-table tr{
+		        position: relative;
+		        margin-bottom: 1em;
+		    	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+		    }
+		    table.responsive-table td{
+		        border-top: none;
+		    }
+		    table.responsive-table td.organisationtype{
+		        background: #D5E0CC;
+		        border-top: 1px solid #B3BFAA;
+		    }
+		   
+		    table.responsive-table th{
+		    	font-weight: bold;
+		    } 
+	</style>
+{% endblock %}
+	

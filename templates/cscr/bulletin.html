@@ -1,0 +1,124 @@
+{% extends 'cscr/base.html'%}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bulletin</title>
+
+</head>
+<body>
+	{% block content %}
+	 <div class="main">
+	 	<div class="container">
+	 		<h3 style="padding-left: 12px; word-spacing: 10px;">公布欄<br>Bulletin</h3>
+	 		<div class="media">
+
+	 			<!--新聞一 -->
+  				<div class="media-left"><!-- media left start -->
+
+    				<a href="#">
+      					<img class="media-object" src="{% static 'cscr/img/master.JPG' %}" alt="image">
+    				</a>
+  				</div><!-- media left end -->
+  				<div class="media-body" ><!--- media body start -->
+    				<h4 class="media-heading">地政學系學生五年一貫修讀學、碩士學位甄選</h4>
+    				<h6>公告日期：2017-5-13</h6>
+   					<p>
+   						為鼓勵地政學系學士班優秀學生於本系碩士班就讀，培植優秀人才，達到連續學習效果，縮短學、碩士修業年限，以使學生早日就業或升學，<br>特訂國立政治大學地政學系學生五年一貫修讀學、碩士學位鼓勵辦法。
+						申請同學請於五月十日前，繳交下列各項資料乙份作為審查之依據：<br>
+						1.申請書<br>
+						2.學士班歷年成績單及學業總成績平均排名證明<br>
+						3.自傳及讀書計畫<br>
+						4.其他有利審查之文件<br>
+
+						其他相關規定、申請表件及時程等事項請參閱附件。
+
+						地政系辦公室敬啟
+   					</p>
+
+   					<hr>
+  				</div><!-- media body end -->
+
+				<!--新聞二 -->
+  				<div class="media-body">
+    				<h4 class="media-heading">【地政學系碩士在職專班導師課活動公告】106年5月13日</h4>
+    				<h6>公告日期：2017-5-13</h6>
+   					<p>
+   						親愛的備取考生，您好！
+ 
+						請在106年5月23日(週二)前（郵戳為憑）掛號寄回「備取生報到意願同意書」至國立政治大學地政學系碩士在職專班辦公室：
+						<br>116臺北市文山區指南路2段64號。
+ 
+						公告備取生名單於地政學系網頁，請依公告內容之指定期限內至現場辦理驗證<br>（詳細驗證預備文件及說明請參考簡章第十六條報到、驗證注意事項）。<br>
+ 
+						若對於驗證之作業程序有任何疑義，請再來電本專班辦公室洽詢，電話：(02)2939-3091分機50643。
+   					</p>
+
+   					<hr>
+  				</div>
+			
+				<!--新聞三 -->
+  				<div class="media-body">
+    				<h4 class="media-heading">【國立政治大學地政學系106學年度大學申請入學面試序號暨時間表</h4>
+    				<h6>公告日期：2017-5-13</h6>
+   					<p>
+   						一、第二階段指定項目甄試注意事項置於本校網頁中，有關甄試事項請務必至網站(http://aca.nccu.edu.tw/exam/106/106announcement/09LandEconomics.pdf)中查詢。<br>
+
+						二、面試序號暨時間表如附檔
+						三、面試當天請備齊 
+						    1.指定項目甄試通知單。<br>
+							2.國民身分證正本（或有效期限內之護照、汽機車駕照、附加照片之健保卡；不可以學生證代替）。<br>
+
+   					</p>
+
+   					<hr>
+  				</div>
+
+
+
+			</div>
+
+
+	 	</div>
+	 	 	
+	 </div>
+	 <style type="text/css">
+		
+		.main{
+			border-style: solid;
+			border-color: green;
+			height: 100%;
+			background-color: #424242;
+		}
+		.container{
+			background-color: white;
+			width: 900px;
+		}
+
+		.media-body{
+			display: block;
+			width: 95%;
+		}
+
+		.media-left{
+			padding-left: 200px;
+			padding-bottom: 30px;
+		}
+		.media-left img{
+
+			height: 250px;
+			width: 400px;
+
+		}
+
+		.media-body p{
+			word-break: normal;
+		}
+	</style>
+
+	{% endblock %}
+
+	
+</body>
+</html>

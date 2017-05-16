@@ -1,0 +1,82 @@
+{% extends  'cscr/base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>homepage</title>
+
+	
+		
+
+</head>
+<body>
+
+{% block content %}
+	<img src=" {% static 'cscr/img/homepage.png' %} " alt="image">
+
+
+
+<div class="content">
+    <div class="left">
+        <h2>最新消息</h2>
+        <ul>
+        	<li>
+        		time
+        	</li>	
+        	<li>
+        		news	
+        	</li>
+
+        	<br>
+
+        	
+
+        </ul>
+    </div>
+    
+    <div class="right">
+        <h2>關於華人宗教中心</h2>
+    </div>
+</div>
+
+
+<style type="text/css">
+.content .left, .content .right { 
+   display: inline-block;
+   font-size: 16px; 
+   height: 500px; 
+   line-height: 200px;
+   text-align:center;
+}
+
+.content { 
+  margin: 0 auto;
+  background: #ff70cd;
+  max-width: 100%;
+  font-size: 0; 
+}
+.content .left 
+{ 
+  width: 30%; 
+}
+
+.content .right {
+	width: 70%;
+}
+.content .left
+{ 
+  background: #2eff4d; 
+}
+
+</style>
+	
+	
+
+
+{% endblock %}
+	
+</body>
+</html>
+
+
